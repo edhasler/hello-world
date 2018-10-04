@@ -10,4 +10,4 @@ permissions:
 hooks:
   ValidateService:
     - location: /var/www/html/validate.sh
-    timeout: 60
+      timeout: 60
