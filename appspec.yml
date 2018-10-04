@@ -8,6 +8,9 @@ permissions:
    - object: validate.sh
      mode: 770
 hooks:
+  AfterInstall:
+    - location: scripts/after-install.sh
+      timeout: 60
   ValidateService:
     - location: validate.sh
       timeout: 60
