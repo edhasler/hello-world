@@ -5,7 +5,8 @@ files:
     destination: /var/www/html/
     overwrite: true
 permissions:
-   - object: *.sh
+   - object: /
+     pattern: "*.sh"
      mode: 770
 hooks:
   AfterInstall:
