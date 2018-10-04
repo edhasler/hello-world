@@ -5,9 +5,9 @@ files:
     destination: /var/www/html/
     overwrite: true
 permissions:
-   - object: /var/www/html/validate.sh
+   - object: validate.sh
      mode: 770
 hooks:
   ValidateService:
-    - location: /var/www/html/validate.sh
+    - location: validate.sh
       timeout: 60
