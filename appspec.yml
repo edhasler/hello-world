@@ -5,11 +5,11 @@ files:
     destination: /var/www/html/
     overwrite: true
 permissions:
-   - object: validate.sh
+   - object: *.sh
      mode: 770
 hooks:
   AfterInstall:
-    - location: scripts/after-install.sh
+    - location: after-install.sh
       timeout: 60
   ValidateService:
     - location: validate.sh
