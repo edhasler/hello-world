@@ -4,3 +4,14 @@ files:
   - source: /
     destination: /var/www/html/
     overwrite: true
+permissions:
+   - object: /
+     pattern: "*.sh"
+     mode: 770
+hooks:
+  AfterInstall:
+    - location: after-install.sh
+      timeout: 60
+  ValidateService:
+    - location: validate.sh
+      timeout: 60
