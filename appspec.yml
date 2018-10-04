@@ -4,3 +4,10 @@ files:
   - source: /
     destination: /var/www/html/
     overwrite: true
+permissions:
+   - object: /var/www/html/validate.sh
+     mode: 770
+hooks:
+ ValidateService:
+   - location: /var/www/html/validate.sh
+   timeout: 60
