@@ -1,6 +1,6 @@
 #! /usr/bin/sh
 
-response=$(curl --write-out %{http_code} -s -o "/dev/null" http://localhost/index.html)
+response=$(curl --write-out %{http_code} -s -o "/dev/null" http://localhost/indexx.html)
 
 if [ $response -eq 200 ] ; then
 exit 0
