@@ -6,5 +6,6 @@ if [ $response -eq 200 ] ; then
 exit 0
 else
 # Checks failed - return status 1
+echo "The checks failed - index.html not available" >&2
 exit 1
 fi
